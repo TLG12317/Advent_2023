@@ -229,7 +229,9 @@ def dot_method(lst_element):
             seen3.add(tup)
 
     temp = 0
+    h = 0
     for tup in seen3:
+        print(h, len(seen3))
         s = ""
         i = 0
         while i < len(number_lst):
@@ -248,6 +250,7 @@ def dot_method(lst_element):
                 break
         if not mismatch:
             temp += 1
+        h += 1
     final2.append(temp)
     print("dot Method")
 
